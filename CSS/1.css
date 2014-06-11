@@ -1,0 +1,699 @@
+
+/*****
+*  masterPage  css
+*  2013-11-5
+*version:1.1
+*****/
+p, form, ol, ul, li, dl, dt, dd, h3,h4, body, html
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight:lighter;
+}
+a{  text-decoration:none; }
+.clear{ clear:both; height:0px;}
+.white-popup-layer{ position:fixed; _position:absolute; left:0px; top:0px; height:100%; width:100%; background:#fefefe;background:rgba(255,255,255,.8); z-index:100; display:none;}   
+.data-hide{ display:none}        
+html, body
+{
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    font-family: Microsoft YaHei UI,SimHei,Arial;
+    background: #e9e9e9;
+}
+/* head parts every page*/
+#header
+{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #fdfdfd\9;
+    background-image: -webkit-linear-gradient(top,#fff,#f8f8f8);
+    background-image: -moz-linear-gradient(top,#fff,#f8f8f8);
+    background-image: -ms-linear-gradient(top,#fff,#f8f8f8);
+    background-image: -o-linear-gradient(top,#fff,#f8f8f8);
+    background-image: linear-gradient(top,#fff,#f8f8f8);
+    box-shadow: 0px 1px 2px #dbdbdb;
+    color: #888;
+    font-size: 13px;
+    z-index: 10;
+    font-family: SimSun;
+}
+.l_n
+{
+    position: absolute;
+    left: 65px;
+    top: 0px;
+    height: 40px;
+}
+.r_n
+{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    height: 40px;
+}
+#logo
+{
+    display: block;
+    float: left;
+    margin-top: 5px;
+}
+.hnav li a.a-sight
+{
+    border-bottom: 3px solid #228fbd;
+    color: #228fbd;
+}
+.hnav li a, .hnav li a:visited
+{
+    display: block;
+    text-decoration: none;
+    height: 37px;
+    text-align: center;
+    color: #888;
+    line-height: 40px;
+    font-size: 13px;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.nav
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.nav li
+{
+    float: left;
+    margin: 0px;
+    position: relative;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #e8e8e8;
+    height:40px;
+}
+.nav li ul
+{
+    display: none;
+    background-color: #fff;
+   
+}
+/* specific to non IE browsers */
+.nav li:hover a
+{
+    color: #1ba1e2;
+}
+.nav li:hover ul
+{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.nav li:hover ul li
+{
+    margin: 0px;
+    float: left;
+    padding: 0px;
+}
+.nav li:hover ul li:hover a.hide
+{
+    background: #6fc;
+    color: #ccc;
+    text-align: left;
+}
+.nav li:hover ul li ul
+{
+    display: none;
+    list-style-type: none;
+}
+.nav li:hover ul li a
+{
+    display: block;
+    background: #fdfdfd;
+    color: #888;
+}
+.nav li:hover ul li a:hover
+{
+    color: #1ba1e2;
+}
+.nav .l_nav
+{
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    padding: 0;
+    width: 120px;
+    border: 1px solid #bbb;
+    box-shadow: 0px 2px 2px #dbdbdb;
+}
+.nav .l_nav li
+{
+    list-style: none;
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+}
+.nav .l_nav li a
+{
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #e6e6e6;
+    border-left: 0px;
+    border-right: 0px;
+}
+.nav .r_nav
+{
+    position: absolute;
+    top: 40px;
+    left: -20px;
+    padding: 0;
+    width: 140px;
+    border: 1px solid #bbb;
+    box-shadow: 1px 1px 2px #dbdbdb;
+}
+.nav .r_nav li
+{
+    list-style: none;
+    width: 140px;
+    height: 28px;
+    text-align: center;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #e6e6e6;
+    border-left: 0px;
+    border-right: 0px;
+}
+.nav .r_nav li a
+{
+    height: 28px;
+    line-height: 28px;
+    display: block;
+}
+.r_nav li a.name-tri
+{
+    height: 40px;
+    width: 15px;
+    background-image: url(../images/SYS.png);
+    background-position: 0 -20px;
+    display: inline;
+    float: right;
+}
+.log_out
+{
+    background-color: transparent;
+    border: 0px;
+    color: #007bbb;
+}
+/*menu tab  信息初始 */
+
+#footer{ width:90%; min-width:960px; margin:80px auto; border-top:1px solid #ccc; text-align:center; height:60px; font-size:12px; line-height:30px; color:#777;  }
+#footer a{ color:#777;}
+#footer a:hover{ text-decoration:underline;}
+.m-notion{ position:absolute; left:50%;top:0px; margin-left:-75px; width:150px; padding:5px 10px; line-height:20px;  
+   background-color:#ff5854;  border-bottom-right-radius:4px; -moz-border-bottom-right--radius:4px; 
+   border-bottom-left-radius:4px; -moz-border-bottom-left--radius:4px;text-align:center;
+   font-size:13px;   color:#f5f5f5; box-shadow:3px 3px 5px rgba(0,0,0,.1),-3px -3px 5px rgba(0,0,0,.4);
+   -moz-box-shadow:3px 3px 5px rgba(0,0,0,.1), -3px -3px 5px rgba(0,0,0,.1);
+   -webkit-box-shadow:3px 3px 5px rgba(0,0,0,.1), -3px -3px 5px rgba(0,0,0,.4);
+   z-index:10000;display:none;
+    }
+#back-to-top
+{
+    position: fixed;
+    right: 8px;
+    bottom: 0px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/SYS.png) no-repeat -125px -150px;
+    cursor: pointer;
+    display: none;
+}
+#back-to-bottom
+{
+    position: fixed;
+    right: 8px;
+    bottom: 60px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/SYS.png) no-repeat -125px -110px;
+    cursor: pointer;
+}
+
+#framepage
+{
+    position: absolute;
+    width: 82%;
+    top: 160px;
+    left: 18%;
+    height: 600px;
+    border-left: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+}
+
+/*弹窗部分*/
+.mini-popup-box{ display:none;position:absolute;left:50%; margin-left:-160px; top:150px; width:320px; min-height:100px; background-color:#fff; border:1px solid #ccc; border-radius:4px;
+   -moz-border-radius:4px; -webkit-boder-radius:4px; box-shadow:2px 2px 4px rgba(0,0,0,.2),-2px -2px 4px rgba(0,0,0,.2); padding:5px; line-height:35px;}
+.mini-popup-box h4{margin:0px; height:30px; width:100%; border-bottom:2px solid #1ba1e2; color:#1ba1e2; font-size:15px; }
+#pbox_bg
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    filter: alpha(opacity=40);
+    z-index: 2000;
+    display: none;
+}
+
+
+#pbox_container
+{
+    position: absolute;
+    width: 640px;
+    min-height: 260px;
+    padding-bottom: 25px;
+    margin-left: -320px;
+    margin-top: -130px;
+    left: 50%;
+    top: 50%;
+    font-family: 黑体;
+    background-color: #fff;
+    z-index: 2010;
+    display: none;
+    box-shadow: 4px 4px 5px #777,-3px -3px 5px #777;
+}
+.pbox
+{
+    position: absolute;
+    width: 640px;
+    max-height: 400px;
+    padding-bottom: 25px;
+    margin-left: -320px;
+    top: 120px;
+    left: 50%;
+    font-family: 黑体;
+    background-color: #fff;
+    z-index: 2010;
+    display: none;
+    box-shadow: 4px 4px 5px #777,-3px -3px 5px #777;
+}
+
+.p_title
+{
+    top: 15px;
+    padding-left: 5%;
+    width: 90%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 17px;
+    font-family: Microsoft Yahei;
+    color: #444;
+}
+.p_cont
+{
+    position: relative;
+    left: 5%;
+    top: 5px;
+    width: 90%;
+    font-family: SimSun;
+    margin-bottom: 25px;
+    max-height: 320px;
+    overflow: auto;
+}
+.p_cont ul
+{
+    width: 90%;
+    float: left;
+}
+.p_cont ul li, .p_cont ul li a
+{
+    display: block;
+    width: 100%;
+    line-height: 28px;
+}
+.p_cont ul li
+{
+    list-style: none;
+    border-bottom: 1px dashed #ccc;
+}
+.p_cont ul li a
+{
+    color: #666;
+    text-decoration: none;
+    font-size: 13px;
+}
+.p_cont ul li a:hover
+{
+    color: #222;
+}
+.p_close
+{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/sys.png");
+    background-position: 0px 0px;
+    cursor: pointer;
+}
+.p_close:hover
+{
+    background-image: url("../images/sys.png");
+    background-position: -20px 0px;
+}
+
+
+#warningBox
+{
+    position: fixed;
+    width: 320px;
+    min-height: 40px;
+    top: 60px;
+    margin-left: -160px;
+    padding: 10px;
+    left: 50%;
+    background-color: rgba(0,0,0,.7);
+    background-color: #000\9;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-family: SimHei;
+    line-height: 35px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+    z-index: 10000;
+    text-align: center;
+    display: none;
+}
+
+/*ajax tab*/
+.AjaxTabStyle .ajax__tab_header
+{
+    height: 38px !important;
+    height: 40px;
+    border-top: solid 1px #cccccc;
+    border-left: solid 1px #cccccc;
+    border-right: solid 1px #cccccc;
+    background-color: #f5f5f5;
+    padding-left: 20px;
+    border-bottom: solid 1px #cccccc;
+    width: 100%;
+}
+
+/*默认选项卡样式*/
+
+.AjaxTabStyle .ajax__tab_tab
+{
+    height: 30px;
+    border-top: solid 1px #cccccc;
+    border-left: solid 1px #cccccc;
+    border-right: solid 1px #cccccc;
+    background-color: #f5f5f5;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    line-height: 31px !important;
+    line-height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+/*鼠标悬停在选项卡上时*/
+
+.AjaxTabStyle .ajax__tab_hover .ajax__tab_tab
+{
+    cursor: pointer;
+}
+
+/*当前激活选项卡*/
+
+.AjaxTabStyle .ajax__tab_active .ajax__tab_tab
+{
+    height: 31px !important;
+    height: 30px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border-bottom: solid 1px #ffffff;
+    position: relative;
+    left: 0px !important;
+    left: 5px;
+    top: 1px;
+    line-height: 31px !important;
+    line-height: 30px;
+    padding-left: 5px !important;
+    padding-left: 0px;
+    cursor: pointer;
+    outline: none;
+}
+
+/*内容*/
+
+.AjaxTabStyle .ajax__tab_body
+{
+    background-color: White;
+    border-left: solid 1px #cccccc;
+    border-right: solid 1px #cccccc;
+    text-align: center;
+}
+
+.AjaxTabStyle_r
+{
+    font-size: 13px;
+    color: #444;
+}
+
+.AjaxTabStyle_r .ajax__tab_header
+{
+    height: 33px;
+    border-top: solid 1px #cccccc;
+    border-left: solid 1px #cccccc;
+    border-right: solid 1px #cccccc;
+    background-color: #f5f5f5;
+    border-bottom: solid 1px #cccccc;
+}
+
+.AjaxTabStyle_r .ajax__tab_tab
+{
+    height: 25px;
+    line-height: 25px;
+    margin-left: 5px;
+    margin-top: 6px;
+    border-top: solid 1px #cccccc;
+    border-left: solid 1px #cccccc;
+    border-right: solid 1px #cccccc;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+.AjaxTabStyle_r .ajax__tab_tab span
+{
+    color: #444;
+}
+.AjaxTabStyle_r .ajax__tab_hover .ajax__tab_tab
+{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.AjaxTabStyle_r .ajax__tab_active .ajax__tab_tab
+{
+    height: 26px !important;
+    height: 25px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border-bottom: solid 1px #ffffff;
+    position: relative;
+    left: 0px !important;
+    left: 5px;
+    top: 1px;
+    line-height: 26px !important;
+    line-height: 25px;
+    outline: none;
+    cursor: pointer;
+}
+
+.AjaxTabStyle_r .ajax__tab_body
+{
+    background-color: #ffffff;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    min-height: 100px;
+}
+.AjaxTabStyle_r .ajax__tab_body a
+{
+    color: #333;
+    text-decoration: none;
+}
+.AjaxTabStyle_r .ajax__tab_body a:hover
+{
+    color: #000;
+    text-decoration: none;
+}
+.AjaxTabStyle_r .ajax__tab_body table tr
+{
+    height: 0px;
+}
+
+/*单独在FireFox中应用的样式*/
+.AjaxTabStyle1
+{
+    font-size: 13px;
+    color: #444;
+}
+
+.AjaxTabStyle1 .ajax__tab_header
+{
+    height: 33px;
+    border-top: solid 1px #cccccc;
+    border-left: solid 1px #cccccc;
+    border-right: solid 1px #cccccc;
+    background-color: #f5f5f5;
+    border-bottom: solid 1px #cccccc;
+}
+
+.AjaxTabStyle1 .ajax__tab_tab
+{
+    height: 25px;
+    line-height: 25px;
+    margin-left: 5px;
+    margin-top: 6px;
+    border-top: solid 1px #cccccc;
+    border-left: solid 1px #cccccc;
+    border-right: solid 1px #cccccc;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+.AjaxTabStyle1 .ajax__tab_tab span
+{
+    color: #444;
+}
+.AjaxTabStyle1 .ajax__tab_hover .ajax__tab_tab
+{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.AjaxTabStyle1 .ajax__tab_active .ajax__tab_tab
+{
+    height: 26px !important;
+    height: 25px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border-bottom: solid 1px #ffffff;
+    position: relative;
+    left: 0px !important;
+    left: 5px;
+    top: 1px;
+    line-height: 26px !important;
+    line-height: 25px;
+    outline: none;
+    cursor: pointer;
+}
+
+.AjaxTabStyle1 .ajax__tab_body
+{
+    background-color: #ffffff;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    min-height: 100px;
+}
+.AjaxTabStyle .ajax__tab_body a
+{
+    color: #333;
+    text-decoration: none;
+}
+.AjaxTabStyle .ajax__tab_body a:hover
+{
+    color: #000;
+    text-decoration: none;
+}
+.AjaxTabStyle .ajax__tab_body table tr
+{
+    height: 40px;
+}
+.AjaxTabStyle1 .ajax__tab_body a
+{
+    color: #333;
+    text-decoration: none;
+}
+.AjaxTabStyle1 .ajax__tab_body a:hover
+{
+    color: #000;
+    text-decoration: none;
+}
+.AjaxTabStyle1 .ajax__tab_body table tr
+{
+    height: 40px;
+}
+
+/*弹窗表格部分*/
+.table_tab
+{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+/* .table_tab td{border-bottom:1px solid #007bbb; }*/
+
+.black
+{
+    color: Black;
+}
+#pbox_container input[type="submit"]
+{
+    background-color: #ffffff;
+    border: 0;
+    width: 100%;
+    height: 25;
+    cursor: pointer;
+    text-align: center;
+    color: #777;
+}
+#pbox_container input[type="submit"]:hover
+{
+    background-color: #ffffff;
+    color: #007bbb;
+    border: 0;
+    height: 25;
+}
+
+/*默认选项卡样式*/
+
+#pbox_container1 input[type="submit"]
+{
+    background-color: #ffffff;
+    border: 0;
+    width: 100%;
+    height: 25;
+    cursor: pointer;
+    text-align: center;
+}
+#pbox_container1 input[type="submit"]:hover
+{
+    background-color: #ffffff;
+    color: #007bbb;
+    border: 0;
+    height: 25;
+}
+
